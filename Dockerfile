@@ -1,6 +1,6 @@
 # Build stage
 FROM gradle:8.1-jdk AS build
-MAINTAINER codaholic.com
+LABEL maintainer="codaholic.com"
 WORKDIR /
 COPY . /
 RUN gradle clean bootJar
