@@ -12,7 +12,7 @@ spring:
             ddl-auto: create-drop
 
 server:
-    port: 3000
+    port: ${APP_PORT}
     compression:
         enabled: true
     error:
